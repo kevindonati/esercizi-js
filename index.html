@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foglio esercizi DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        line-height: 1.5;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      .updated-title {
+        color: darkblue;
+      }
+
+      .myHeading {
+        text-transform: uppercase;
+      }
+
+      .shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .generated-paragraph {
+        color: darkgreen;
+        font-style: italic;
+      }
+
+      .expensive {
+        background-color: #ffe0e0;
+      }
+
+      .dark-mode {
+        background-color: #121212;
+        color: white;
+      }
+
+      .dark-mode a {
+        color: #90caf9;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      img {
+        max-width: 60px;
+        height: auto;
+        display: block;
+      }
+
+      #formArea,
+      #tableArea,
+      #controlsArea {
+        margin-top: 25px;
+      }
+
+      input,
+      button {
+        margin: 5px 5px 5px 0;
+        padding: 8px 10px;
+      }
+
+      #messageArea {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Titolo principale della pagina</h1>
+      <h2 id="changeMyColor">Questo h2 cambia colore</h2>
+      <p>Paragrafo introduttivo fuori dai div.</p>
+    </header>
+
+    <main>
+      <section>
+        <h3>Primo blocco</h3>
+        <div id="firstDiv">
+          <p>Primo paragrafo nel primo div</p>
+          <p>Secondo paragrafo nel primo div</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Secondo blocco</h3>
+        <div id="secondDiv">
+          <p>Primo paragrafo nel secondo div</p>
+          <p>Secondo paragrafo nel secondo div</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Link di test</h3>
+        <a href="https://www.google.com">Link 1</a>
+        <a href="https://www.epicode.com">Link 2</a>
+        <a href="https://www.github.com">Link 3</a>
+      </section>
+
+      <section>
+        <h3>Liste</h3>
+        <ul id="firstList">
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+
+        <ul id="secondList">
+          <li>Seconda lista - 1</li>
+          <li>Seconda lista - 2</li>
+          <li>Seconda lista - 3</li>
+        </ul>
+      </section>
+
+      <section id="controlsArea">
+        <h3>Area controlli</h3>
+        <button id="toggleImagesBtn">Nascondi immagini</button>
+        <button id="sortByPriceBtn">Ordina per prezzo</button>
+        <button id="sortByQuantityBtn">Ordina per quantità</button>
+        <button id="darkModeBtn">Toggle dark mode</button>
+        <br />
+        <input type="text" id="searchInput" placeholder="Cerca prodotto..." />
+      </section>
+
+      <section id="formArea">
+        <h3>Area form</h3>
+        <!-- Qui puoi costruire il form via JS -->
+      </section>
+
+      <section id="tableArea">
+        <h3>Area tabella</h3>
+        <!-- Qui verrà generata la tabella via JS -->
+      </section>
+
+      <section>
+        <p id="messageArea"></p>
+        <p id="totalValue"></p>
+      </section>
+    </main>
+
+    <footer>
+      <h3>
+        Footer con
+        <a href="https://www.openai.com">link interno al footer</a>
+      </h3>
+      <p>Testo footer</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
